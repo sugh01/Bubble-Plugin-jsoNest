@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "0": "ecommerce",
+        "1": "payment",
+        "2": "email",
+        "3": "technical",
+        "4": "data (things)"
+    },
+    "demo_page": "https://jsonest.bubbleapps.io/",
+    "description": "Get deep-nested, highly-customizable JSON data from a thing or list of things.  Rename JSON keys and reformat their values.  Dates - Bubble ISO to other formats. Currency - numbers-to-USD (i.e. 2 to $2.00).  Strings to booleans (i.e. \"color\" : \"blue\"   to   \"color\" : {\"blue\" : true).  Phone - (i.e. 2125551212 to (212) 555-1212 ) Great SendGrid companion or other services that do not convert data types or interpret conditionals besides booleans.   Runs as a server-side workflow action for API workflows.\n\nEDITOR\nhttps://bubble.is/page?name=index&id=jsonest&tab=tabs-1\n\nDEMO\nhttps://jsonest.bubbleapps.io/\n\n",
+    "image": "//s3.amazonaws.com/appforest_uf/f1558274933553x305987190923350700/open-and-close-brackets-enclosing-a-hexagon%20%281%29.png",
+    "instructions": "",
+    "license": "open_source",
+    "link": "speechbooth.com",
+    "name": "jsoNest",
+    "plugin_instructions": "The output JSON is formatted with a 'Configuration' JSON.  The keys below let you target a type & field, rename it, and reformat the output.  See example app\n\nfield_id (required)\nidentifies the field in the database you want to format. This remains fixed even if you rename the field within the editor\n\ntype (required)\nidentifies the type of thing.  This remains fixed even if you rename the field within the editor. Format = 'custom.name_of_type'.  Typing in '_all' into this field will apply to all types.  \n\nnew_id\nif you want to change the name of the field_id in the output, type the new name here.\n\nformat\nlets you format how the data is presented.  This is a string value.   Dates can be changed from bubble's standard ISO value to.  Currency can take numbers and display in n USD.  \n\n\n     mmddyyyy\n     eg. \"01/01/2012\"\n\n     mmmddyyyy \n      eg. \"Jan 1 2012\"\n\n     DDmmmddyyyy \n      eg. \"Tue Jan 1 2012\"\n\n     USD\n     eg. \"$100.00\"\n\n      boolean\n      Can do one of two things.\n      1) Takes a string 'true' and makes boolean true\n      2) Takes a text value, converts it to a key and sets it to true.  \n      \"color\" : \"blue\" becomes \"color\" : { \"blue\" :  true }\n      Useful for sendgrid conditionals\n\ncopy\ninclude this if you want to keep the original field_id after rename or reformatting.  Default is to rename (original is deleted)\n\n\n-------\n\nplugin configuration\n\n'config white list'  when set, only fields specified in the configuration JSON will be exposed\n\n'nested depth'  how many nested layers deep the plugin will expose.  Max = 6\n\n'wrap in array' \nwill wrap the json in brackets even if only a single object [ ]\n\n\n\n\n\n\n-------\n\nplugin configuration\n\n'config white list'  when set, only fields specified in the configuration JSON will be exposed\n\n'nested depth'  how many nested layers deep the plugin will expose.  Max = 6\n\n'wrap in array' \nwill wrap the json in brackets even if only a single object [ ]\n\n\n\n"
+}

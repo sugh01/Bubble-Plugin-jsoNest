@@ -1,0 +1,83 @@
+{
+    "category": "plugins",
+    "display": "thing(s) to json",
+    "fields": {
+        "ABo": {
+            "caption": "list of things",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "list_of_things",
+            "optional": true,
+            "rank": 0,
+            "value": "_any_thing"
+        },
+        "ABp": {
+            "caption": "thing",
+            "editor": "DynamicValue",
+            "name": "thing",
+            "optional": true,
+            "rank": 1,
+            "value": "_any_thing_bindable"
+        },
+        "ABq": {
+            "caption": "nested depth",
+            "default_val": 3,
+            "editor": "StaticNumber",
+            "name": "depth",
+            "rank": 4
+        },
+        "ABr": {
+            "caption": "output logging",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "output_logging",
+            "rank": 7
+        },
+        "ABs": {
+            "caption": "wrap_in_array",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "wrap_in_array",
+            "rank": 6
+        },
+        "ABu": {
+            "caption": "configuration",
+            "doc": "field_id (required) identifies the field in the database you want to format. This remains fixed even if you rename the field within the editor  type (required) identifies the type of thing.  This remains fixed even if you rename the field within the editor. Format = 'custom.name_of_type'.  Typing in '_all' into this field will apply to all types.    new_id if you want to change the name of the field_id in the output, type the new name here.  format lets you format how the data is presented.  This is a string value.   Dates can be changed from bubble's standard ISO value to.  Currency can take numbers and display in n USD.         mmddyyyy     eg. \"01/01/2012\"      mmmddyyyy      eg. \"Jan 1 2012\"      DDmmmddyyyy      eg. \"Tue Jan 1 2012\"      USD     eg. \"$100.00\"       boolean      Can do one of two things.      1) Takes a string 'true' and makes boolean true      2) Takes a text value, converts it to an id and sets it to true.        \"color\" : \"blue\" becomes \"blue\" :  true      Useful for sendgrid conditionals  copy include this if you want to keep the original field_id after rename or reformatting.  Default is to rename (original is deleted)   -------  plugin configuration  'config white list'  when set, only fields specified in the configuration JSON will be exposed  'nested depth'  how many nested layers deep the plugin will expose.  Max = 6  'wrap in array' will wrap the json in brackets even if only a single object [ ]",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "configuration",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "ABv": {
+            "caption": "config is white list",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "white_list",
+            "rank": 3
+        },
+        "ABw": {
+            "caption": "console logging",
+            "editor": "Checkbox",
+            "name": "console_logging",
+            "rank": 8
+        },
+        "ABx": {
+            "caption": "indent",
+            "editor": "StaticNumber",
+            "name": "indent",
+            "rank": 5
+        }
+    },
+    "return_value": {
+        "ABt": {
+            "caption": "json",
+            "name": "json",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

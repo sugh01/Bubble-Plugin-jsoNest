@@ -1,0 +1,42 @@
+{
+    "category": "plugins",
+    "display": "get html",
+    "fields": {
+        "ACA": {
+            "caption": "url",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "url",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ACC": {
+            "caption": "create",
+            "name": "create",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACD": {
+            "caption": "page",
+            "name": "page",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACE": {
+            "caption": "status",
+            "name": "status",
+            "rank": 2,
+            "value": "text"
+        },
+        "ACF": {
+            "caption": "content",
+            "name": "content",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
